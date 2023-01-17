@@ -30,7 +30,7 @@ st.table(mktg_scenario)
 if st.button(label="Click to Predict"):
 
     # Load the model
-    loaded_model = pickle.load(open('lm_model_prediction.sav','rb'))
+    loaded_model = pickle.load(open('lm_model_prediction_class.sav','rb'))
     
     # Make predictions (and get out pred probabilities)
     pred = loaded_model.predict(mktg_scenario)[0]
